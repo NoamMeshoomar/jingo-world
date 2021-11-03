@@ -1,0 +1,35 @@
+.container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container nav {
+    padding: 20px;
+    top: 20px;
+    width: 100%;
+    background-color: rgb(47, 47, 252);
+}
+
+.container nav ul {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav li {
+    list-style: none;
+}
+
+.container nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container iframe {
+    margin-top: 20px;
+}

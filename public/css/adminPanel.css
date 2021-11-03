@@ -1,0 +1,140 @@
+.admin-panel {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(212, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.admin-panel h3 {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.admin-panel .admin-panel-container {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-panel .close-btn {
+    position: absolute;
+    color: #fff;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.admin-panel h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.admin-panel input {
+    margin-bottom: 10px;
+}
+
+.admin-panel input::placeholder {
+    font-size: 16px;
+}
+
+.admin-panel input,
+.admin-panel button {
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.admin-panel button {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(231, 35, 0);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.admin-panel button:active {
+    box-shadow: none;
+}
+
+.admin-panel .ban-form,
+.admin-panel .mute-form,
+.admin-panel .kick-form {
+    margin: 20px 0;
+}
+
+.admin-panel .user-punishments {
+    margin-left: 20px;
+}
+
+.admin-panel .events {
+    margin: 20px 0;
+}
+
+.admin-panel .events .screen-message {
+    width: 100%;;
+    margin: 20px 0;
+}
+
+.admin-panel .events .screen-message textarea {
+    padding: 20px;
+    width: 100%;;
+    height: max-content;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.admin-panel .events .screen-message div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.admin-panel .events .screen-message input {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.admin-panel .events .screen-message button {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.admin-panel .events .teleport-everyone {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-panel .events .teleport-everyone input {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.admin-panel .events .teleport-everyone button {
+    width: 70%;
+    margin-right: 20px;
+}

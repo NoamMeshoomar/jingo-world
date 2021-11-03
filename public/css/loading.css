@@ -1,0 +1,6 @@
+.loading {
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+    z-index: 999;
+}

@@ -1,0 +1,49 @@
+.user-card {
+    position: absolute;
+    width: 275px;
+    height: 380px;
+    background-image: url('../assets/userCard/usercard.png');
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.user-card .close-btn {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.user-card h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgb(46, 46, 46);
+    font-weight: 400;
+    margin-top: 28px;
+}
+
+.user-card .events-container {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-card .events-container img {
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.user-card .user {
+    position: absolute;
+    width: 100%;
+    margin-right: 60px;
+}

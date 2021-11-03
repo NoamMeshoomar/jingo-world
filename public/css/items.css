@@ -1,0 +1,41 @@
+.game .player .items .itemonuser {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.game .player .items .colors {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 501;
+}
+
+.game .player .items .hats {
+    z-index: 506;
+}
+
+.game .player .items .hairs {
+    z-index: 505;
+}
+.game .player .items .shirts {
+    z-index: 503;
+}
+
+.game .player .items .pants {
+    z-index: 502;
+}
+
+.game .player .items .glasses,
+.game .player .items .necklaces {
+    z-index: 504;
+}
+
+.game .player .items .stuff {
+    z-index: 507;
+}
+
+.game .player .items .skates {
+    z-index: 500;
+}

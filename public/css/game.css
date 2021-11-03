@@ -1,0 +1,283 @@
+.game {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.game .game-background {
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game .game-background .background-image {
+    pointer-events: none;
+}
+
+.game .game-background .teleport-image {
+    position: absolute;
+    transform: translate(-50%, -95%);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.game .bottom-bar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    z-index: 997;
+}
+
+.game .bottom-bar .inventory-btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(31, 57, 128);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game .bottom-bar .inventory-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Chat */
+
+.game .chat-form {
+    position: relative;
+    margin: 0 20px;
+}
+
+.game .chat-form .chat-input {
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid rgb(31, 57, 128);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game .chat-form button {
+    position: absolute;
+    height: 43px;
+    padding: 0 5px;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(31, 57, 128);
+    cursor: pointer;
+    outline: none;
+}
+
+/* Admin Panel */
+
+.admin-panel-btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(212, 0, 0);
+    border: 1px solid rgb(95, 0, 0);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.admin-panel-btn h3 {
+    color: #fff;
+}
+
+.game .trade-invites {
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    height: 500px;
+    max-height: 500px;
+    width: fit-content;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    z-index: 999;
+}
+
+.game .trade-invites::-webkit-scrollbar {
+    display: none;
+}
+
+.game .game-background .npc {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #a25a5a;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+    cursor: pointer;
+}
+
+.game .game-background .npc .sentences {
+    position: absolute;
+    padding: 5px;
+    width: 165px;
+    top: -60px;
+    font-size: 16px;
+    color: #a25a5a;
+    border: 1px solid #a25a5a;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.game .game-background .npc .sentences p {
+    line-height: 1.3;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Drop */
+
+.game .drop_collected {
+    padding: 20px;
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../assets/message/success.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 505px;
+    height: 288px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.game .drop_collected h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.game .drop_collected .item_image {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.game .drop_collected h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Drop Accept Window */
+
+.game .accept_window_drop {
+    position: absolute;
+    background-image: url('../assets/message/failed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 505px;
+    height: 288px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: 999;
+}
+
+.game .accept_window_drop img {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.game .accept_window_drop button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+.game .accept_window_drop button:first-child {
+    background-color: rgb(0, 116, 0);
+    margin-left: 10px;
+}
+
+.game .accept_window_drop button:last-child {
+    background-color: rgb(143, 0, 0);
+}
+
+/* User Display */
+
+.user-display {
+    position: absolute;
+    width: 66px;
+    height: 85px;
+    left: 140px;
+    top: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-display .color {
+    z-index: 1;
+}
+
+.user-display .hat {
+    z-index: 7;
+}
+
+.user-display .hair {
+    z-index: 6;
+}
+
+.user-display .glasses {
+    z-index: 5;
+}
+
+.user-display .necklace {
+    z-index: 4;
+}
+
+.user-display .shirt {
+    z-index: 3;
+}
+
+.user-display .pants {
+    z-index: 2;
+}
+
+.user-display .stuff {
+    z-index: 8;
+}

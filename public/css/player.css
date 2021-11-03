@@ -1,0 +1,65 @@
+.players {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.player {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 85px;
+    transform: translate(-50%, -85%);
+    transition: top .5s linear, left .5s linear;
+}
+
+.player .in_trade {
+    position: absolute;
+    top: -55px;
+    z-index: 888;
+}
+
+.player .admin-icon {
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    margin-top: 152px;
+    pointer-events: none;
+}
+
+
+.player .username {
+    margin-top: 110px;
+    font-size: 18px;
+    pointer-events: none;
+    z-index: 100;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+.player .message-bubble {
+    position: absolute;
+    padding: 10px;
+    width: 150px;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 145px;
+    pointer-events: none;
+    visibility: hidden;
+    word-break: break-word;
+    z-index: 999;
+}
+
+.player .message-bubble h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    pointer-events: none;
+}
