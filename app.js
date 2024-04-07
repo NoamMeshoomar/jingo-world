@@ -1038,10 +1038,8 @@ function putItemOnUser(categories, category, userId, itemId, socketId) {
         case 'shirts':
             ItemsOnUser.findOneAndUpdate({ userId }, { shirt: categories?.shirt?.toString() !== itemId.toString() ? itemId : null })
             .then(() => {
-                console.log('1');
                 ItemsOnUser.findOne({ userId }).populate('shirt')
                 .then(({ shirt }) => {
-                    console.log('2');
                     rooms[room].users[socketId].clothes.shirt = shirt;
 
                     const userCount = Object.keys(rooms[room].users);

@@ -271,7 +271,7 @@ socket.on('walking', ({ id, position }) => {
     //     }
     // }
 
-    // playerEl.addEventListener('transitionend', e => {
+    // playerEl.addEventListener('trsitionend', e => {
     //     if(e.propertyName === 'top') {
     //         walking = false;
     //     }

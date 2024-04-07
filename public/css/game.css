@@ -24,7 +24,6 @@
     position: absolute;
     transform: translate(-50%, -95%);
     cursor: pointer;
-    pointer-events: none;
 }
 
 .game .bottom-bar {
